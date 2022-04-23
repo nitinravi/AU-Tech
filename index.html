@@ -5,7 +5,17 @@
         <meta name = "viewport" content = "width = device-width, initial-scale = 1">
     </head>
     <body>
-        <br/>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">☰</button>  
+            <br/>
         <link rel = "preconnect" href = "https://fonts.googleapis.com">
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
         <link href = "https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel = "stylesheet">
@@ -31,5 +41,18 @@
             <p class = "article-date">April 11, 2022</p>
             <p class = "home-article-content">Users will still be able to record calls if their phones have a built-in recording feature. The policy is updated for smartphones running Android 10 and later. It will provide more privacy to Android users. The API is used by apps designed to help users with disabilities. A Truecaller spokesperson said, “as per the updated Google Developer Program policies, we are unable to offer call recordings any longer. This won't affect devices that have recording built into the device natively."</p>
         </div>
+          </div>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+          }
+          </script>
     </body>
 </html>
