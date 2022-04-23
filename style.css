@@ -174,3 +174,33 @@ label.label {
     height: 48px;
   }
 }
+
+.header{
+    color:#ffffff;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+.truecaller_date{
+    color:#ffffff;
+    font-family: sans-serif;
+    font-size: 3mm;
+    margin-left: 9cm;
+}
+.heading-2{
+    color:#ffffff;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.centre{
+    margin-left:12cm;
+    
+}
+.a-text{
+    color:#ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-left: 9cm;
+}
