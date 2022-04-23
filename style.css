@@ -16,6 +16,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: white;
     font-weight: bold;
+    margin-left: 10%;
 }
 .article-heading {
     font-family: 'Lato', sans-serif;
@@ -26,7 +27,9 @@ body {
     height: 62.5vw;
     max-height: 75vh;
     min-height: 200px;
-    width: 100%;
+    position: static;
+    margin-left: 10%;
+    width: 90%;
 }
 .article-date {
     color: #77e4ff;
@@ -64,6 +67,7 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin-right: 35px;
+    margin-left: 10%;
 }
 
 .form-group {
