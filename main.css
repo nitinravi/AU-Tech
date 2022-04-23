@@ -1,0 +1,61 @@
+body {
+    background-color: #01050c;
+}
+.heading {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 35px;
+}
+.featured {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.article-heading {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+}
+.home-image {
+    height: 62.5vw;
+    max-height: 75vh;
+    min-height: 200px;
+    width: 100%;
+}
+.article-date {
+    color: #77e4ff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.home-article-content {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    font-weight: bold;
+}
+.article-image {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #959595;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-right: 35px;
+}
