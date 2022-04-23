@@ -69,6 +69,28 @@ a {
     margin-right: 35px;
     margin-left: 10%;
 }
+.card img {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+}
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-2 {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin-right: 35px;
+    margin-left: 25%;
+}
+.card-2 img {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+}
+.card-2:hover img {
+    transform: scale(1.1);
+}
 
 .form-group {
     margin-bottom: 1rem;
@@ -197,6 +219,7 @@ label.label {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 .centre{
     margin-left:12cm;
@@ -205,6 +228,13 @@ label.label {
 .a-text{
     color:#ffffff;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-left: 9cm;
+}
+.b-text{
+    color:#ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 9cm;
 }
