@@ -90,11 +90,13 @@ a {
 .card1:hover img {
     transform: scale(1.1);
 }
-
+.card1 iframe {
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+}
 .card1:hover iframe {
   transform: scale(1.1);
 }
-
 .card-2 {
     display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
