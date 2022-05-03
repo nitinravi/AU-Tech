@@ -401,3 +401,11 @@ label.label {
       line-height: 1.8;
     }
   }
+
+  .videos {
+    width:"560";
+    height:"315";
+    margin-left: 8cm;
+  }
+
+  
