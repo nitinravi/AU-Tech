@@ -14,6 +14,29 @@
             <a href="contact.html">Contact</a>
             <a href = "https://www.kaspersky.com/resource-center/preemptive-safety/how-to-report-a-website">Report abuse</a>
           </div>
+
+          <div  id="main">
+            <input type="checkbox" id="toggle">
+          </div>
+          
+          <script>
+            const btn = document.querySelector("#toggle");
+    
+            const currentTheme = localStorage.getItem("theme");
+            if (currentTheme == "dark") {
+              document.body.classList.add("dark-theme");
+            }
+    
+            btn.addEventListener("click", function () {
+              document.body.classList.toggle("dark-theme");
+    
+              let theme = "light";
+              if (document.body.classList.contains("dark-theme")) {
+                theme = "dark";
+              }
+              localStorage.setItem("theme", theme);
+            });
+        </script>
           
           <div id="main">
             <button class="openbtn" onclick="openNav()">☰</button>  
@@ -22,7 +45,7 @@
         <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
         <link href = "https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel = "stylesheet">
         <h1 class = "heading">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVideos</h1><br/>       
-        <br/><br/>
+        <br/><br/><br>
 
         <div class="card1">
         <iframe class="article-image" src="https://www.youtube.com/embed/7EfnrJptrr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -42,7 +65,7 @@
             <h3 class = "article-heading">OnePlus Ace could be the rebranded Realme GT Neo 3</h3>
         </div>
 
-        <br><br><br>
+        <br><br><br><br>
 
         <div class="card1">
             <iframe class="article-image" src="https://www.youtube.com/embed/QbhsMLD9Hb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -61,6 +84,7 @@
             </iframe>
             <h3 class = "article-heading">History of the iPhones through 14 years of development</h3>
         </div>
+        <br><br><br><br>
 
         <script>
             function openNav() {
@@ -85,26 +109,7 @@
             <a href="https://github.com/nitinravi/AU-Tech"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" height="30" width="30"></img></a>
 
         </div>
-        Toggle Dark-Mode &nbsp;<button class="btn-toggle">&nbsp</button>
-     
-        <script>
-            const btn = document.querySelector(".btn-toggle");
-    
-            const currentTheme = localStorage.getItem("theme");
-            if (currentTheme == "dark") {
-              document.body.classList.add("dark-theme");
-            }
-    
-            btn.addEventListener("click", function () {
-              document.body.classList.toggle("dark-theme");
-    
-              let theme = "light";
-              if (document.body.classList.contains("dark-theme")) {
-                theme = "dark";
-              }
-              localStorage.setItem("theme", theme);
-            });
-        </script>
+        
 
         <div class="footer-left">
 
