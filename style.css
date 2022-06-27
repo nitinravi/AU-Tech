@@ -489,7 +489,7 @@ label.label {
 .class0 {
     margin-left: 20px;
     font-family: 'Poppins', sans-serif;
-    background-color: #121212;
+    background-color: #15181f;
 }
 .class1 {
     text-align: center;
@@ -555,7 +555,7 @@ label.label {
 .class9 {
     padding: 8px;
     border: hsl(212, 86%, 64%) solid 1px;
-    background-color: #121212;
+    background-color: #15181f;
     margin-right: 15px;
     color: white;
     cursor: pointer;
@@ -627,3 +627,67 @@ label.label {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;} 
+.class11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.on-dark {
+  background: #15181f;
+}
+.revbutton {
+  color: white;
+  width: 200px;
+  height: 60px;
+  background-color: #15181f;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0px 20px 30px -10px #1e2f97;
+}
+.revbutton:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, hsl(212, 86%, 64%));
+}
+.class12 {
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+  text-align: center;
+  color: white;
+}
+.class13 {
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  color: white;
+  padding-top: 10px;
+  margin-left: 4cm;
+}
+.class14 {
+  color: #269bb9;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-weight: medium;
+  font-size: 14px;
+}
+.card2 {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-right: 35px;
+  margin-left: 9%;
+}
+.card2 img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
