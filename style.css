@@ -97,6 +97,7 @@ h3{
     font-family: "Gill Sans", sans-serif;
     text-align: center;
     font-weight: 500;
+    padding: 5%;
 }
 .home-image {
     height: 62.5vw;
@@ -237,7 +238,8 @@ label.label {
     display: block;
     margin-bottom: 0.5rem;
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bolder;
     text-align: center;
 }
 
