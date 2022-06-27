@@ -17,6 +17,18 @@
           </div>
 
           <div  id="main">
+	    <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">SEARCH</button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()">
+                <a href="https://nitinravi.github.io/AU-Tech/hyperloop.html">Elon Musk's the Boring Company to take on Hyperloop Project</a>
+                <a href="https://nitinravi.github.io/AU-Tech/teams.html">Microsoft is finally adding teams to its own store</a>
+                <a href="https://nitinravi.github.io/AU-Tech/2.html">Oneplus Ace could be the rebranded Realme GT NEO 3</a>
+                <a href="https://nitinravi.github.io/AU-Tech/metaverse.html">If everything is the Metaverse then the Metaverse is nothing</a>
+                <a href="https://nitinravi.github.io/AU-Tech/truecaller.html">Truecaller to end its call recording feature as Google updates play store policy</a>
+                <a href="https://nitinravi.github.io/AU-Tech/1.html">Twitter accepts Elon Musk's $44B acquisition offer</a>
+              </div>
+            </div>
             <input type="checkbox" id="toggle">
           </div>
           
@@ -79,6 +91,24 @@
           function closeNav() {
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
+          }
+	  function myFunction() {
+  	    document.getElementById("myDropdown").classList.toggle("show");
+	  }
+          function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              a[i].style.display = "";
+            } else {
+              a[i].style.display = "none";
+            }
+           }
           }
           </script>
     </body>
