@@ -26,10 +26,10 @@
             <button class="openbtn" onclick="openNav()">☰</button>  
             <br/>
             <div class = "class1">
-                <p>NEWSLETTERS</p>
+                <p><a href = "newsletters.html">NEWSLETTERS</a></p>
             </div>
             <div class = "class2">
-                <p>AUMSTECH</p>
+                <p><a href = "index.html">AUMSTECH</a></p>
             </div>
             <div class = "class7">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
@@ -71,7 +71,7 @@
                 </div>
             </div>
             <div class = "class1">
-                <p>NEWSLETTERS</p>
+                <p><a href = "newsletters.html">NEWSLETTERS</a></p>
             </div>
             <div class = "class2">
                 <p>SUBSCRIBE</p>
@@ -81,13 +81,17 @@
             </div>
             <div class = "class3">
             <div class = "class8">
-                <form action = "ineedhelp.html" id = "form">
+                <form onsubmit = "return valid()" action = "formsubmit.html" id = "form">
                     <label for id = "id1" style = "color: white; display: inline-block; width: 120px;">Username</label>
                     <input type = "text" required id = "id1"><br/><br/>
-                    <label for id = "id2" style = "color: white; display: inline-block; width: 120px;">E-Mail</label>
-                    <input type = "email" required id = "id2"><br/><br/>
+                    <p style = "color: white; display: inline-block; width: 120px;">E-Mail</p>
+                    <input type = "text" required id = "id2"><br/><br/>
                     <label for id = "id3" style = "color: white; display: inline-block; width: 120px;">Phone Number</label>
-                    <input type = "tel" required pattern = "[1-9]{1}[0-9]{9}"><br/><br/>
+                    <input type = "tel" required pattern = "[6-9]{1}[0-9]{9}"><br/><br/>
+                    <div class = "class16">
+                        <input type = "checkbox" id = "id4">
+                        <p style = "color: white; display: inline-block; width: 110px;">Notifications</p>
+                    </div><br/>
                     <div class = "class10">
                         <input type = "submit" id = "submit" class = "class9" value = "SUBSCRIBE">
                         <input type = "reset" class = "class9" value = "CLEAR">
@@ -106,6 +110,20 @@
             function closeNav() {
                 document.getElementById("mySidebar").style.width = "0";
                 document.getElementById("main").style.marginLeft= "0";
+            }
+            function valid() {
+                var a = document.getElementById("id4");
+                if (a.checked == false) {
+                    alert("Checkbox needs to be checked!");
+                    return false;
+                }
+                var email = document.getElementById("id2").value;  
+                atpos = email.indexOf("@");
+                dotpos = email.lastIndexOf(".");
+                if(atpos < 1 || ((dotpos - atpos) < 2)) {
+                    alert("E-Mail Incorrect!");
+                    return false;
+                }
             }
           </script>
     </body>
