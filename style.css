@@ -691,3 +691,21 @@ label.label {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
 }
+.class14 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  padding-top: 80px;
+  text-shadow: 2px 2px hsl(212, 86%, 64%);
+}
+.class15 {
+  font-family: 'Poppins', sans-serif;
+  color: #959595;
+  text-align: center;
+  padding-top: 5px;
+}
+.class16 {
+  float: right;
+  display: block;
+}
